@@ -12,10 +12,8 @@ fun main()
     println("Your ${secondDice.numSides} sided dice rolled ${secondDice.roll()}, the dice is of color ${secondDice.color}")
 
     val coin = Coin()
-    println("Coin throw number 1: ${coin.throwCoin()}")
-    println("Coin throw number 2: ${coin.throwCoin()}")
-    println("Coin throw number 3: ${coin.throwCoin()}")
-    println("Coin throw number 4: ${coin.throwCoin()}")
-    println("Coin throw number 5: ${coin.throwCoin()}")
-    println("Coin throw number 6: ${coin.throwCoin()}")
+    repeat(10)
+    {
+        index -> println("Coin throw number ${index + 1}: ${coin.throwCoin()}")
+    }
 }
